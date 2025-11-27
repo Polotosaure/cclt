@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez le CCLT Espérance - Nous sommes à votre écoute pour toute demande d'information.">
+    <title>Contact - CCLT Espérance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>CCLT Espérance</h1>
+                    <p class="subtitle">Centre de Continuité du lien thérapeutique</p>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li><a href="services.html">Nos Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Nous Contacter</h1>
+                <p>Notre équipe est à votre écoute</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <h2>Informations Pratiques</h2>
+
+                        <div class="info-box">
+                            <h3>📍 Adresse</h3>
+                            <p><strong>CCLT Espérance</strong><br>
+                            Clinique de l'Espérance<br>
+                            Centre-ville de Rennes<br>
+                            35000 Rennes, France</p>
+                        </div>
+
+                        <div class="info-box">
+                            <h3>📞 Téléphone</h3>
+                            <p>Pour nous contacter par téléphone, veuillez vous référer aux coordonnées de la Clinique de l'Espérance.</p>
+                        </div>
+
+                        <div class="info-box">
+                            <h3>🕐 Horaires d'Ouverture</h3>
+                            <p>Le CCLT est ouvert du lundi au vendredi.<br>
+                            Les horaires sont adaptés selon les projets thérapeutiques individualisés.</p>
+                        </div>
+
+                        <div class="info-box">
+                            <h3>🚇 Accès</h3>
+                            <p>Le centre est facilement accessible en transports en commun, situé en plein centre-ville de Rennes.</p>
+                            <ul>
+                                <li>Métro : Stations à proximité</li>
+                                <li>Bus : Plusieurs lignes desservent le quartier</li>
+                                <li>Parking : Parkings publics à proximité</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h2>Formulaire de Contact</h2>
+                        <p>Pour toute demande d'information, vous pouvez remplir ce formulaire. Nous vous répondrons dans les meilleurs délais.</p>
+
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Objet de votre demande *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Sélectionnez un objet</option>
+                                    <option value="information">Demande d'information</option>
+                                    <option value="admission">Admission</option>
+                                    <option value="rdv">Prise de rendez-vous</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Votre message *</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="consent" name="consent" required>
+                                    J'accepte que mes données soient utilisées pour traiter ma demande *
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Envoyer</button>
+
+                            <p class="form-note">* Champs obligatoires</p>
+                        </form>
+
+                        <div id="formMessage" class="form-message" style="display: none;"></div>
+                    </div>
+                </div>
+
+                <div class="additional-info">
+                    <h2>Admissions et Orientation</h2>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <h3>Pour les Patients</h3>
+                            <p>Si vous êtes intéressé par une prise en charge au CCLT, nous vous invitons à prendre contact avec notre équipe. Une première rencontre permettra d'évaluer vos besoins et de déterminer ensemble si notre accompagnement est adapté à votre situation.</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>Pour les Professionnels</h3>
+                            <p>Médecins, psychiatres, psychologues, assistants sociaux : si vous souhaitez orienter un patient vers le CCLT, n'hésitez pas à nous contacter pour discuter de la situation et des modalités d'admission.</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>Pour les Familles</h3>
+                            <p>Les proches et familles de patients peuvent nous contacter pour obtenir des informations sur notre fonctionnement et notre approche thérapeutique. Nous sommes à votre écoute.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CCLT Espérance</h3>
+                    <p>Centre de Continuité du lien thérapeutique</p>
+                    <p>Clinique de l'Espérance</p>
+                    <p>Rennes, France</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="services.html">Nos Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Informations</h3>
+                    <p>Établissement de santé privé</p>
+                    <p>Spécialisé en psychiatrie</p>
+                    <p>Ouvert depuis 2008</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CCLT Espérance - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
