@@ -13,15 +13,14 @@ Le site est composé de 4 pages principales :
 - **Accueil** (`index.html`) - Page d'accueil avec présentation générale
 - **Présentation** (`presentation.html`) - Histoire et philosophie du centre
 - **Nos Services** (`services.html`) - Détails des services proposés
-- **Contact** (`contact.html`) - Formulaire de contact et informations pratiques
+- **Formulaire** (`formulaire.html`) - Formulaire de contact avec Formspree
 
 ## Fonctionnalités
 
 - Design responsive adapté à tous les écrans (mobile, tablette, desktop)
 - Menu de navigation interactif avec hamburger menu sur mobile
-- Formulaire de contact avec validation
-- Animations au défilement
-- Design moderne et professionnel
+- Formulaire de contact avec intégration Formspree
+- Design moderne et professionnel avec logo Ramsay Santé
 
 ## Technologies Utilisées
 
@@ -83,31 +82,19 @@ Pour modifier le contenu :
 
 ## Formulaire de Contact
 
-Le formulaire de contact est actuellement configuré pour fonctionner en mode démo (les données sont affichées dans la console du navigateur).
+Le formulaire de contact utilise Formspree pour l'envoi des messages.
 
-Pour le connecter à un serveur backend :
+Pour configurer le formulaire :
 
-1. Ouvrez `script.js`
-2. Localisez la fonction de soumission du formulaire (ligne ~37)
-3. Remplacez le `console.log` par un appel AJAX vers votre serveur
+1. Créez un compte sur [Formspree](https://formspree.io/)
+2. Créez un nouveau formulaire et récupérez votre ID
+3. Dans `formulaire.html`, remplacez `YOUR_FORM_ID` par votre ID Formspree :
 
-Exemple avec Fetch API :
-```javascript
-fetch('votre-url-backend/contact', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(formData),
-})
-.then(response => response.json())
-.then(data => {
-    showFormMessage('Message envoyé avec succès !', 'success');
-})
-.catch(error => {
-    showFormMessage('Erreur lors de l\'envoi du message.', 'error');
-});
+```html
+<form class="contact-form" action="https://formspree.io/f/VOTRE_ID" method="POST">
 ```
+
+Les messages seront automatiquement envoyés à l'adresse email configurée dans votre compte Formspree.
 
 ## Structure des Fichiers
 
@@ -116,9 +103,11 @@ cclt/
 ├── index.html          # Page d'accueil
 ├── presentation.html   # Page de présentation
 ├── services.html       # Page des services
-├── contact.html        # Page de contact
+├── formulaire.html     # Page de formulaire de contact
 ├── styles.css          # Feuille de styles
 ├── script.js           # Scripts JavaScript
+├── images/             # Dossier des images
+│   └── ramsay-sante-logo.svg
 └── README.md          # Ce fichier
 ```
 
@@ -151,7 +140,7 @@ Pour déployer le site en production :
 
 ## Support et Contact
 
-Pour toute question concernant le site web, veuillez contacter le CCLT Espérance via les coordonnées indiquées sur la page Contact.
+Pour toute question concernant le site web, veuillez contacter le CCLT Espérance via le formulaire de contact disponible sur le site.
 
 ## Licence
 
