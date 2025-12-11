@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 420" width="500" height="420">
+  <!-- Logo carré avec 4 sections -->
+  <rect x="199" y="103" width="47" height="47" fill="#1a3a52"/>
+  <rect x="253" y="103" width="47" height="47" fill="#1a3a52"/>
+  <rect x="199" y="157" width="47" height="47" fill="#1a3a52"/>
+
+  <!-- Section en bas à droite avec diagonale -->
+  <rect x="253" y="157" width="47" height="47" fill="#1a3a52"/>
+  <line x1="253" y1="204" x2="300" y2="157" stroke="white" stroke-width="6"/>
+
+  <!-- Texte Ramsay -->
+  <text x="100" y="285" font-family="Arial, sans-serif" font-size="68" font-weight="bold" fill="#1a3a52">Ramsay</text>
+
+  <!-- Texte Santé -->
+  <text x="162" y="370" font-family="Arial, sans-serif" font-size="52" font-weight="300" fill="#1a3a52">Santé</text>
+</svg>
