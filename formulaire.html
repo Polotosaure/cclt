@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contactez le CCLT Espérance - Nous sommes à votre écoute pour toute demande d'information.">
-    <title>Contact - CCLT Espérance</title>
+    <meta name="description" content="Formulaire de contact CCLT Espérance - Contactez-nous facilement via notre formulaire en ligne.">
+    <title>Formulaire de Contact - CCLT Espérance</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,8 +22,8 @@
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="presentation.html">Présentation</a></li>
                     <li><a href="services.html">Nos Services</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                    <li><a href="formulaire.html">Formulaire</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="formulaire.html" class="active">Formulaire</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -37,52 +37,20 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <h1>Nous Contacter</h1>
-                <p>Notre équipe est à votre écoute</p>
+                <h1>Formulaire de Contact</h1>
+                <p>Contactez-nous facilement en ligne</p>
             </div>
         </section>
 
         <section class="content-section">
             <div class="container">
-                <div class="contact-layout">
-                    <div class="contact-info">
-                        <h2>Informations Pratiques</h2>
-
-                        <div class="info-box">
-                            <h3>📍 Adresse</h3>
-                            <p><strong>CCLT Espérance</strong><br>
-                            Clinique de l'Espérance<br>
-                            Centre-ville de Rennes<br>
-                            35000 Rennes, France</p>
-                        </div>
-
-                        <div class="info-box">
-                            <h3>📞 Téléphone</h3>
-                            <p>Pour nous contacter par téléphone, veuillez vous référer aux coordonnées de la Clinique de l'Espérance.</p>
-                        </div>
-
-                        <div class="info-box">
-                            <h3>🕐 Horaires d'Ouverture</h3>
-                            <p>Le CCLT est ouvert du lundi au vendredi.<br>
-                            Les horaires sont adaptés selon les projets thérapeutiques individualisés.</p>
-                        </div>
-
-                        <div class="info-box">
-                            <h3>🚇 Accès</h3>
-                            <p>Le centre est facilement accessible en transports en commun, situé en plein centre-ville de Rennes.</p>
-                            <ul>
-                                <li>Métro : Stations à proximité</li>
-                                <li>Bus : Plusieurs lignes desservent le quartier</li>
-                                <li>Parking : Parkings publics à proximité</li>
-                            </ul>
-                        </div>
-                    </div>
-
+                <div style="max-width: 800px; margin: 0 auto;">
                     <div class="contact-form-container">
-                        <h2>Formulaire de Contact</h2>
-                        <p>Pour toute demande d'information, vous pouvez remplir ce formulaire. Nous vous répondrons dans les meilleurs délais.</p>
+                        <h2>Envoyez-nous un message</h2>
+                        <p>Remplissez ce formulaire et nous vous répondrons dans les meilleurs délais. Tous les champs marqués d'un astérisque (*) sont obligatoires.</p>
 
-                        <form class="contact-form" id="contactForm">
+                        <!-- Formulaire Formspree -->
+                        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                             <div class="form-group">
                                 <label for="name">Nom complet *</label>
                                 <input type="text" id="name" name="name" required>
@@ -121,29 +89,34 @@
                                 </label>
                             </div>
 
-                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                            <!-- Champ anti-spam caché de Formspree -->
+                            <input type="text" name="_gotcha" style="display:none">
+
+                            <button type="submit" class="btn btn-primary">Envoyer le message</button>
 
                             <p class="form-note">* Champs obligatoires</p>
                         </form>
-
-                        <div id="formMessage" class="form-message" style="display: none;"></div>
                     </div>
-                </div>
 
-                <div class="additional-info">
-                    <h2>Admissions et Orientation</h2>
-                    <div class="info-cards">
-                        <div class="info-card">
-                            <h3>Pour les Patients</h3>
-                            <p>Si vous êtes intéressé par une prise en charge au CCLT, nous vous invitons à prendre contact avec notre équipe. Une première rencontre permettra d'évaluer vos besoins et de déterminer ensemble si notre accompagnement est adapté à votre situation.</p>
-                        </div>
-                        <div class="info-card">
-                            <h3>Pour les Professionnels</h3>
-                            <p>Médecins, psychiatres, psychologues, assistants sociaux : si vous souhaitez orienter un patient vers le CCLT, n'hésitez pas à nous contacter pour discuter de la situation et des modalités d'admission.</p>
-                        </div>
-                        <div class="info-card">
-                            <h3>Pour les Familles</h3>
-                            <p>Les proches et familles de patients peuvent nous contacter pour obtenir des informations sur notre fonctionnement et notre approche thérapeutique. Nous sommes à votre écoute.</p>
+                    <div class="additional-info" style="margin-top: 3rem;">
+                        <h2>Autres Moyens de Contact</h2>
+                        <div class="info-cards">
+                            <div class="info-card">
+                                <h3>📍 Nous Rendre Visite</h3>
+                                <p><strong>CCLT Espérance</strong><br>
+                                Clinique de l'Espérance<br>
+                                Centre-ville de Rennes<br>
+                                35000 Rennes, France</p>
+                            </div>
+                            <div class="info-card">
+                                <h3>📞 Par Téléphone</h3>
+                                <p>Pour nous contacter par téléphone, veuillez vous référer aux coordonnées de la Clinique de l'Espérance.<br><br>
+                                Horaires : Du lundi au vendredi</p>
+                            </div>
+                            <div class="info-card">
+                                <h3>ℹ️ Informations</h3>
+                                <p>Consultez notre <a href="contact.html" style="color: var(--primary-color); font-weight: 600;">page contact</a> pour plus d'informations pratiques sur nos horaires, l'accès et les admissions.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
