@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulaire de contact CCLT Espérance - Contactez-nous facilement via notre formulaire en ligne.">
-    <title>Formulaire de Contact - CCLT Espérance</title>
+    <meta name="description" content="Formulaire de demande d'admission au CCLT Espérance - Remplissez notre formulaire en ligne pour demander une admission.">
+    <title>Formulaire de Demande d'Admission - CCLT Espérance</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -36,8 +36,8 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <h1>Formulaire de Contact</h1>
-                <p>Contactez-nous facilement en ligne</p>
+                <h1>Formulaire de Demande d'Admission</h1>
+                <p>Demandez votre admission au CCLT Espérance</p>
             </div>
         </section>
 
@@ -45,53 +45,133 @@
             <div class="container">
                 <div style="max-width: 800px; margin: 0 auto;">
                     <div class="contact-form-container">
-                        <h2>Envoyez-nous un message</h2>
-                        <p>Remplissez ce formulaire et nous vous répondrons dans les meilleurs délais. Tous les champs marqués d'un astérisque (*) sont obligatoires.</p>
+                        <h2>Formulaire de Demande d'Admission</h2>
+                        <p>Remplissez ce formulaire pour une demande d'admission au CCLT. Tous les champs marqués d'un astérisque (*) sont obligatoires.</p>
+
+                        <div style="background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 1rem; margin-bottom: 2rem; border-radius: 5px;">
+                            <p style="margin: 0; color: #856404; font-weight: 600;">⚠️ Important :</p>
+                            <p style="margin: 0.5rem 0 0 0; color: #856404;">Un courrier d'adressage de votre psychiatre est nécessaire pour finaliser votre demande d'admission. Merci de l'envoyer à l'adresse email : <strong>esp-soinscclt@ramsaysante.fr</strong></p>
+                        </div>
 
                         <!-- Formulaire Formspree -->
-                        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <form class="contact-form" action="https://formspree.io/f/mpwvozgj" method="POST">
                             <div class="form-group">
-                                <label for="name">Nom complet *</label>
-                                <input type="text" id="name" name="name" required>
+                                <label for="name">Nom *</label>
+                                <input type="text" id="name" name="Nom" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" required>
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="E-mail" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="phone">Téléphone</label>
-                                <input type="tel" id="phone" name="phone">
+                                <label for="phone">Téléphone *</label>
+                                <input type="tel" id="phone" name="Téléphone" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="subject">Objet de votre demande *</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="">Sélectionnez un objet</option>
-                                    <option value="information">Demande d'information</option>
-                                    <option value="admission">Admission</option>
-                                    <option value="rdv">Prise de rendez-vous</option>
-                                    <option value="autre">Autre</option>
+                                <label for="address">Adresse *</label>
+                                <textarea id="address" name="Adresse" rows="3" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="birthdate">Date de naissance *</label>
+                                <input type="date" id="birthdate" name="Date de naissance" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="doctor">Médecin Traitant / Numéro de téléphone de ce dernier *</label>
+                                <input type="text" id="doctor" name="Médecin Traitant / Numéro de téléphone" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="psychiatrist">Psychiatre traitant / Numéro de téléphone de ce dernier *</label>
+                                <input type="text" id="psychiatrist" name="Psychiatre traitant / Numéro de téléphone" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="familysituation">Situation familiale *</label>
+                                <select id="familysituation" name="Situation familiale" required>
+                                    <option value="">Sélectionnez votre situation</option>
+                                    <option value="Célibataire">Célibataire</option>
+                                    <option value="En couple">En couple</option>
+                                    <option value="Marié(e)">Marié(e)</option>
+                                    <option value="Pacsé(e)">Pacsé(e)</option>
+                                    <option value="Divorcé(e)">Divorcé(e)</option>
+                                    <option value="Veuf/Veuve">Veuf/Veuve</option>
                                 </select>
                             </div>
 
                             <div class="form-group">
-                                <label for="message">Votre message *</label>
-                                <textarea id="message" name="message" rows="6" required></textarea>
+                                <label for="children">Avez-vous des enfants ? *</label>
+                                <select id="children" name="Avez-vous des enfants ?" required>
+                                    <option value="">Sélectionnez une réponse</option>
+                                    <option value="Oui">Oui</option>
+                                    <option value="Non">Non</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="childrencount">Si oui, combien ?</label>
+                                <input type="number" id="childrencount" name="Si oui, combien ?" min="0">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="employment">Avez vous un emploi ? *</label>
+                                <select id="employment" name="Avez vous un emploi ?" required>
+                                    <option value="">Sélectionnez une réponse</option>
+                                    <option value="Oui">Oui</option>
+                                    <option value="Non">Non</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="jobdetails">Si oui, lequel ? A temps plein ou partiel ?</label>
+                                <input type="text" id="jobdetails" name="Si oui, lequel ? A temps plein ou partiel ?">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="orientation">Qui vous a orienté vers le CCLT ? *</label>
+                                <input type="text" id="orientation" name="Qui vous a orienté vers le CCLT ?" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="familylife">Décrivez votre vie familiale et/ou amicale *</label>
+                                <textarea id="familylife" name="Décrivez votre vie familiale et/ou amicale" rows="4" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="worklif">Comment vous sentez-vous au travail ?</label>
+                                <textarea id="worklife" name="Comment vous sentez-vous au travail ?" rows="3"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="neighborhood">Connaissez-vous vos voisins ? Avez-vous une vie de quartier ?</label>
+                                <textarea id="neighborhood" name="Connaissez-vous vos voisins ? Avez-vous une vie de quartier ?" rows="3"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="hobbies">Quels sont vos loisirs ? *</label>
+                                <textarea id="hobbies" name="Quels sont vos loisirs ?" rows="3" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="expectations">Qu'attendez-vous de la prise en charge au CCLT ? *</label>
+                                <textarea id="expectations" name="Qu'attendez-vous de la prise en charge au CCLT ?" rows="4" required></textarea>
                             </div>
 
                             <div class="form-group">
                                 <label class="checkbox-label">
                                     <input type="checkbox" id="consent" name="consent" required>
-                                    J'accepte que mes données soient utilisées pour traiter ma demande *
+                                    J'accepte que mes données soient utilisées pour traiter ma demande d'admission *
                                 </label>
                             </div>
 
                             <!-- Champ anti-spam caché de Formspree -->
                             <input type="text" name="_gotcha" style="display:none">
 
-                            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                            <button type="submit" class="btn btn-primary">Envoyer le formulaire</button>
 
                             <p class="form-note">* Champs obligatoires</p>
                         </form>

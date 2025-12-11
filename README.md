@@ -13,13 +13,13 @@ Le site est composé de 4 pages principales :
 - **Accueil** (`index.html`) - Page d'accueil avec présentation générale
 - **Présentation** (`presentation.html`) - Histoire et philosophie du centre
 - **Nos Services** (`services.html`) - Détails des services proposés
-- **Formulaire** (`formulaire.html`) - Formulaire de contact avec Formspree
+- **Formulaire** (`formulaire.html`) - Formulaire de demande d'admission avec Formspree
 
 ## Fonctionnalités
 
 - Design responsive adapté à tous les écrans (mobile, tablette, desktop)
 - Menu de navigation interactif avec hamburger menu sur mobile
-- Formulaire de contact avec intégration Formspree
+- Formulaire de demande d'admission avec intégration Formspree
 - Design moderne et professionnel avec logo Ramsay Santé
 
 ## Technologies Utilisées
@@ -80,21 +80,15 @@ Pour modifier le contenu :
 2. Modifiez le texte entre les balises HTML
 3. Sauvegardez et rechargez la page dans votre navigateur
 
-## Formulaire de Contact
+## Formulaire de Demande d'Admission
 
-Le formulaire de contact utilise Formspree pour l'envoi des messages.
+Le formulaire de demande d'admission utilise Formspree pour l'envoi des informations.
 
-Pour configurer le formulaire :
+Le formulaire est configuré avec l'ID Formspree : `mpwvozgj`
 
-1. Créez un compte sur [Formspree](https://formspree.io/)
-2. Créez un nouveau formulaire et récupérez votre ID
-3. Dans `formulaire.html`, remplacez `YOUR_FORM_ID` par votre ID Formspree :
+Les demandes d'admission sont automatiquement envoyées à l'adresse email configurée dans le compte Formspree.
 
-```html
-<form class="contact-form" action="https://formspree.io/f/VOTRE_ID" method="POST">
-```
-
-Les messages seront automatiquement envoyés à l'adresse email configurée dans votre compte Formspree.
+**Important :** Les candidats doivent également envoyer un courrier d'adressage de leur psychiatre à l'adresse email : esp-soinscclt@ramsaysante.fr
 
 ## Structure des Fichiers
 
@@ -103,7 +97,7 @@ cclt/
 ├── index.html          # Page d'accueil
 ├── presentation.html   # Page de présentation
 ├── services.html       # Page des services
-├── formulaire.html     # Page de formulaire de contact
+├── formulaire.html     # Page de formulaire de demande d'admission
 ├── styles.css          # Feuille de styles
 ├── script.js           # Scripts JavaScript
 ├── images/             # Dossier des images
@@ -140,7 +134,7 @@ Pour déployer le site en production :
 
 ## Support et Contact
 
-Pour toute question concernant le site web, veuillez contacter le CCLT Espérance via le formulaire de contact disponible sur le site.
+Pour toute question concernant le site web ou pour une demande d'admission, veuillez contacter le CCLT Espérance via le formulaire disponible sur le site ou directement par email à esp-soinscclt@ramsaysante.fr
 
 ## Licence
 
