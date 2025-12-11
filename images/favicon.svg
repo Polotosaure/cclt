@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background -->
+  <rect width="100" height="100" fill="#ffffff"/>
+
+  <!-- Logo carré Ramsay - 4 sections -->
+  <rect x="20" y="20" width="28" height="28" fill="#1a3a52"/>
+  <rect x="52" y="20" width="28" height="28" fill="#1a3a52"/>
+  <rect x="20" y="52" width="28" height="28" fill="#1a3a52"/>
+
+  <!-- Section en bas à droite avec diagonale caractéristique -->
+  <rect x="52" y="52" width="28" height="28" fill="#1a3a52"/>
+  <line x1="52" y1="80" x2="80" y2="52" stroke="white" stroke-width="4"/>
+</svg>
