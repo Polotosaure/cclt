@@ -13,15 +13,14 @@ Le site est composé de 4 pages principales :
 - **Accueil** (`index.html`) - Page d'accueil avec présentation générale
 - **Présentation** (`presentation.html`) - Histoire et philosophie du centre
 - **Nos Services** (`services.html`) - Détails des services proposés
-- **Contact** (`contact.html`) - Formulaire de contact et informations pratiques
+- **Formulaire** (`formulaire.html`) - Formulaire de demande d'admission avec Formspree
 
 ## Fonctionnalités
 
 - Design responsive adapté à tous les écrans (mobile, tablette, desktop)
 - Menu de navigation interactif avec hamburger menu sur mobile
-- Formulaire de contact avec validation
-- Animations au défilement
-- Design moderne et professionnel
+- Formulaire de demande d'admission avec intégration Formspree
+- Design moderne et professionnel avec logo Ramsay Santé
 
 ## Technologies Utilisées
 
@@ -81,33 +80,15 @@ Pour modifier le contenu :
 2. Modifiez le texte entre les balises HTML
 3. Sauvegardez et rechargez la page dans votre navigateur
 
-## Formulaire de Contact
+## Formulaire de Demande d'Admission
 
-Le formulaire de contact est actuellement configuré pour fonctionner en mode démo (les données sont affichées dans la console du navigateur).
+Le formulaire de demande d'admission utilise Formspree pour l'envoi des informations.
 
-Pour le connecter à un serveur backend :
+Le formulaire est configuré avec l'ID Formspree : `mpwvozgj`
 
-1. Ouvrez `script.js`
-2. Localisez la fonction de soumission du formulaire (ligne ~37)
-3. Remplacez le `console.log` par un appel AJAX vers votre serveur
+Les demandes d'admission sont automatiquement envoyées à l'adresse email configurée dans le compte Formspree.
 
-Exemple avec Fetch API :
-```javascript
-fetch('votre-url-backend/contact', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(formData),
-})
-.then(response => response.json())
-.then(data => {
-    showFormMessage('Message envoyé avec succès !', 'success');
-})
-.catch(error => {
-    showFormMessage('Erreur lors de l\'envoi du message.', 'error');
-});
-```
+**Important :** Les candidats doivent également envoyer un courrier d'adressage de leur psychiatre à l'adresse email : esp-soinscclt@ramsaysante.fr
 
 ## Structure des Fichiers
 
@@ -116,9 +97,11 @@ cclt/
 ├── index.html          # Page d'accueil
 ├── presentation.html   # Page de présentation
 ├── services.html       # Page des services
-├── contact.html        # Page de contact
+├── formulaire.html     # Page de formulaire de demande d'admission
 ├── styles.css          # Feuille de styles
 ├── script.js           # Scripts JavaScript
+├── images/             # Dossier des images
+│   └── ramsay-sante-logo.svg
 └── README.md          # Ce fichier
 ```
 
@@ -151,7 +134,7 @@ Pour déployer le site en production :
 
 ## Support et Contact
 
-Pour toute question concernant le site web, veuillez contacter le CCLT Espérance via les coordonnées indiquées sur la page Contact.
+Pour toute question concernant le site web ou pour une demande d'admission, veuillez contacter le CCLT Espérance via le formulaire disponible sur le site ou directement par email à esp-soinscclt@ramsaysante.fr
 
 ## Licence
 
